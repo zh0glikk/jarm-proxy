@@ -21,12 +21,6 @@ func Router(cfg config.Config) chi.Router {
 		),
 	)
 
-	//mb init db state via terraform or smth else
-	//check if it exists in db
-	//take fingerprint
-	//compare with one from db
-	//return 200 or 403
-
 	r.Get("/", handlers.ProxyHandler)
 
 	return r

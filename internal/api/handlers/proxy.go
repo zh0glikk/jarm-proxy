@@ -59,6 +59,6 @@ func ProxyHandler(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	//TODO: implement proxy stuff that will send request to address endpoint
+	//TODO: implement proxy stuff that will send request to address
 	//TODO: mb refactor request etc.
 }

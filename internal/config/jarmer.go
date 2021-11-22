@@ -8,7 +8,8 @@ import (
 )
 
 type JarmConfig struct {
-	FingerPrints map[string]string `fig:"finger_prints,required"`
+	Fingerprints map[string]string `fig:"fingerprints,required"`
+	DefaultPort  int               `fig:"default_port,required"`
 }
 
 func (c *config) Jarm() *JarmConfig {

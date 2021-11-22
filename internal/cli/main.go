@@ -40,6 +40,13 @@ func Run(args []string) bool {
 				return service.NewService(cfg).Run(ctx.Context)
 			},
 		},
+		{
+			Name: "run-test-requests",
+			Before: before,
+			Action: func(ctx *cli.Context) error {
+				return service.NewRequestsSender(cfg).Run(ctx.Context)
+			},
+		},
 	}
 
 	if err := app.Run(args); err != nil {

@@ -1,3 +1,2 @@
 .idea
-Dockerfile
-./vendor/gitlab.com
+/vendor/gitlab.com
